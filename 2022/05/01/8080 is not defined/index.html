@@ -276,9 +276,8 @@
     </div>
 </div>
 <div class="article-content">
-    <div id="article" class="content" width=100
-        <p>@<a href="%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">TOC</a></p>
-<hr>
+    <div id="article" class="content" style="width: 100%;">
+        <hr>
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>打开 Wamp主页面在VirtualHost一项出现以下错误：<br>ServerName localhost:8080 is not defined into hosts file.</p>
 <p>—<img src="https://img-blog.csdnimg.cn/0a2fc89cbc8143548fb08c0196eca617.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6LSw5ou-55qE6ICB5p2o,size_20,color_FFFFFF,t_70,g_se,x_16" alt="最后一项"><br>可以看到最后一项提示hosts file error并且提示Error（s） see below</p>
 <p>网上未找到其他有关教程，尝试更改Apache 下的“httpd-vhosts.conf”文件<br>1.左单击状态栏wampserver图标<br>2.点击Apache栏<br>3.在“文件&amp;文档”一栏找到“httpd-vhosts.conf”单击打开<br>4.如下图所示<br><img src="https://img-blog.csdnimg.cn/ac7dca96918f436f9a1f2f5acd4965ea.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6LSw5ou-55qE6ICB5p2o,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>5.尝试将ServerName localhost更改为 ServerName localhost:8080<br><img src="https://img-blog.csdnimg.cn/401ac2904cb14534a94ab9087558d330.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6LSw5ou-55qE6ICB5p2o,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>6.保存回到主页刷新后依然提示出错<br><img src="https://img-blog.csdnimg.cn/b9583c39f09240a3a82a898058769462.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6LSw5ou-55qE6ICB5p2o,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>错误变为syntax error<br>The ServerName localhost:8080:8080 has syntax error in file D:&#x2F;wamp64&#x2F;bin&#x2F;apache&#x2F;apache2.4.51&#x2F;conf&#x2F;extra&#x2F;httpd-vhosts.conf<br>意为语法错误</p>

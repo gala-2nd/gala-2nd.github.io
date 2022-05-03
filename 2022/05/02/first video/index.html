@@ -276,11 +276,11 @@
     </div>
 </div>
 <div class="article-content">
-    <div id="article" class="content" width=100
+    <div id="article" class="content" style="width: 100%;">
         
 <div style="position: relative;width: 100%;height: 0;padding-bottom:75%;">
     <iframe src="//player.bilibili.com/player.html?aid=768683345&bvid=BV1wr4y187Gv&cid=711032837&page=1" 
-        scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute;width: 100%;height: 65%;">
+        scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute;width: 100%;height: 75%;">
     </iframe>
 </div>
 
@@ -315,6 +315,13 @@
     $(function () { $('#article').click(function (e) { if (e.target.tagName == "IMG") { if ($('#nonediv').length == 0) { let MImg = `<div id='noneimg'><img src='${e.target.currentSrc}'></div>`; let MDiv = "<div id='nonediv' style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'></div>"; $('#article').append(MDiv); $('#article').append(MImg); $("#nonediv").fadeIn("slow"); $("#noneimg img").fadeIn("slow") } } else { if ($('#nonediv').length !== 0) { $("#noneimg ").fadeOut("slow"); $("#nonediv").fadeOut("slow"); setTimeout(function () { $('#nonediv').remove(); $('#noneimg').remove() }, 500) } } }); $('.article-content').addClass('content-move') });
 </script>
 <div class="Last-Next">
+    
+    <a href="/2022/05/03/hexo%E4%B8%AD%E4%BB%A5iframe%E5%BD%A2%E5%BC%8F%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
+        <div class="last">
+            <span>上一篇</span>
+            <p>hexo中以iframe形式插入视频无法显示的问题解决</p>
+        </div>
+    </a>
     
 
     
